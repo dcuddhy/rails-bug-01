@@ -13,6 +13,7 @@ feature 'Auth' do
     fill_in "Email", with: "user@example.com"
     fill_in "Password", with: "password"
     click_on "Login"
+    save_and_show_page
     expect(page).to have_content("user@example.com")
   end
 
