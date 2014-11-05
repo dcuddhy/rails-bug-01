@@ -23,4 +23,3 @@ COPY users (id, name, email, password_digest) FROM stdin;
 \.
 
 SELECT pg_catalog.setval('users_id_seq', 2, true);
-
