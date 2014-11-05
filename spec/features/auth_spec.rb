@@ -7,7 +7,8 @@ feature 'Auth' do
     create_user email: "user@example.com"
 
     visit root_path
-    click_on "Login"
+    click_on "Login
+    save_and_show_page"
     expect(page).to have_content("Username / password is invalid")
 
     fill_in "Email", with: "user@example.com"
